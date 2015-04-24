@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.kaasan.info/" />
+<title>itkaasan</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">itkaasan</td></tr>
+</thead><tbody>
+<tr><td>setSpeed</td><td>500</td><td></td></tr>
+<!-- キャプチャ保存フォルダ -->
+<tr><td>store</td><td>/Users/matsudachihiro/jsfes2015test/capture/</td><td>pref_path</td></tr>
+<!-- カウント初期値 -->
+<tr><td>store</td><td>1</td><td>num</td></tr>
+<tr><td>echo</td><td>javascript{ parseInt(storedVars['num']); }</td><td></td></tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr><td>storeEval</td><td>new Date().getTime()</td><td>start_time</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td>${pref_path}${padding_num}.jpg</td><td>background=#FFFFFF</td></tr>
+<tr><td>store</td><td>javascript{ parseInt(storedVars['num']) + 1; }</td><td>num</td></tr>
+<tr><td>echo</td><td>javascript{ parseInt(storedVars['num']); }</td><td></td></tr>
+
+<tr>
+<td>clickAndWait</td>
+<td>css=img.attachment-420x241.wp-post-image</td>
+<td></td>
+</tr>
+<tr><td>store</td><td>javascript{( "0"+storedVars['num']).slice(-2);}</td><td>padding_num</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td>${pref_path}${padding_num}.jpg</td><td>background=#FFFFFF</td></tr>
+<tr><td>store</td><td>javascript{ parseInt(storedVars['num']) + 1; }</td><td>num</td></tr>
+<tr><td>echo</td><td>javascript{ parseInt(storedVars['num']); }</td><td></td></tr>
+<tr>
+<td>type</td>
+<td>id=s</td>
+<td>BuddyPress</td>
+</tr>
+<tr>
+<td>clickAndWait</td>
+<td>id=searchsubmit</td>
+<td></td>
+</tr>
+<tr><td>store</td><td>javascript{( "0"+storedVars['num']).slice(-2);}</td><td>padding_num</td></tr>
+<tr><td>captureEntirePageScreenshot</td><td>${pref_path}${padding_num}.jpg</td><td>background=#FFFFFF</td></tr>
+<tr><td>store</td><td>javascript{ parseInt(storedVars['num']) + 1; }</td><td>num</td></tr>
+<tr>
+<td>clickAndWait</td>
+<td>link=BuddyPress2.2から登録時に会員の種別が追加出来るようになったよ！</td>
+<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
